@@ -23,7 +23,7 @@ def y_predict():
    
    
     
-    return render_template('index.html', prediction_text='Chance of admission: {}%'.format(output))
+    return render_template('index.html', prediction_text='Chance of admission: {:.2f}%'.format(output))
 
 '''@app.route('/predict_api',methods=['POST'])
 def predict_api():
